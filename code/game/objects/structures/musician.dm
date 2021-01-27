@@ -1,5 +1,4 @@
-
-#define MUSICIAN_HEARCHECK_MINDELAY 4
+#the define MUSICIAN_HEARCHECK_MINDELAY 4
 #define MUSIC_MAXLINES 300
 #define MUSIC_MAXLINECHARS 50
 
@@ -107,12 +106,12 @@
 						playing = FALSE
 						hearing_mobs = null
 						return
-					if(!lentext(note))
+					if(!length(note))
 						continue
 					var/cur_note = text2ascii(note) - 96
 					if(cur_note < 1 || cur_note > 7)
 						continue
-					for(var/i=2 to lentext(note))
+					for(var/i=2 to length(note))
 						var/ni = copytext(note,i,i+1)
 						if(!text2num(ni))
 							if(ni == "#" || ni == "b" || ni == "n")
@@ -147,14 +146,14 @@
 	if(lines.len > 0)
 		dat += "<H3>Playback</H3>"
 		if(!playing)
-			dat += "<A href='?src=[REF(src)];play=1'>Play</A> <span class='linkOn'>Stop</SPAN><BR><BR>"
+			dat += "<A href='?src=[REF(src)];play=1'>Play</A> <SPAN CLASS='linkOn'>Stop</SPAN><BR><BR>"
 			dat += "Repeat Song: "
-			dat += repeat > 0 ? "<A href='?src=[REF(src)];repeat=-10'>-</A><A href='?src=[REF(src)];repeat=-1'>-</A>" : "<span class='linkOff'>-</SPAN><span class='linkOff'>-</SPAN>"
+			dat += repeat > 0 ? "<A href='?src=[REF(src)];repeat=-10'>-</A><A href='?src=[REF(src)];repeat=-1'>-</A>" : "<SPAN CLASS='linkOff'>-</SPAN><SPAN CLASS='linkOff'>-</SPAN>"
 			dat += " [repeat] times "
-			dat += repeat < max_repeats ? "<A href='?src=[REF(src)];repeat=1'>+</A><A href='?src=[REF(src)];repeat=10'>+</A>" : "<span class='linkOff'>+</SPAN><span class='linkOff'>+</SPAN>"
+			dat += repeat < max_repeats ? "<A href='?src=[REF(src)];repeat=1'>+</A><A href='?src=[REF(src)];repeat=10'>+</A>" : "<SPAN CLASS='linkOff'>+</SPAN><SPAN CLASS='linkOff'>+</SPAN>"
 			dat += "<BR>"
 		else
-			dat += "<span class='linkOn'>Play</SPAN> <A href='?src=[REF(src)];stop=1'>Stop</A><BR>"
+			dat += "<SPAN CLASS='linkOn'>Play</SPAN> <A href='?src=[REF(src)];stop=1'>Stop</A><BR>"
 			dat += "Repeats left: <B>[repeat]</B><BR>"
 	if(!edit)
 		dat += "<BR><B><A href='?src=[REF(src)];edit=2'>Show Editor</A></B><BR>"
@@ -212,7 +211,7 @@
 			lines.Cut(MUSIC_MAXLINES + 1)
 		var/linenum = 1
 		for(var/l in lines)
-			if(lentext(l) > MUSIC_MAXLINECHARS)
+			if(length(l) > MUSIC_MAXLINECHARS)
 				to_chat(usr, "Line [linenum] too long!")
 				lines.Remove(l)
 			else
@@ -239,13 +238,13 @@
 			if(!usr.canUseTopic(instrumentObj, BE_CLOSE, FALSE, NO_TK))
 				return
 
-			if(lentext(t) >= MUSIC_MAXLINES * MUSIC_MAXLINECHARS)
+			if(length(t) >= MUSIC_MAXLINES * MUSIC_MAXLINECHARS)
 				var/cont = input(usr, "Your message is too long! Would you like to continue editing it?", "", "yes") in list("yes", "no")
 				if(!usr.canUseTopic(instrumentObj, BE_CLOSE, FALSE, NO_TK))
 					return
 				if(cont == "no")
 					break
-		while(lentext(t) > MUSIC_MAXLINES * MUSIC_MAXLINECHARS)
+		while(length(t) > MUSIC_MAXLINES * MUSIC_MAXLINECHARS)
 		ParseSong(t)
 
 	else if(href_list["help"])
@@ -277,7 +276,7 @@
 			return
 		if(lines.len > MUSIC_MAXLINES)
 			return
-		if(lentext(newline) > MUSIC_MAXLINECHARS)
+		if(length(newline) > MUSIC_MAXLINECHARS)
 			newline = copytext(newline, 1, MUSIC_MAXLINECHARS)
 		lines.Add(newline)
 
@@ -292,7 +291,7 @@
 		var/content = html_encode(input("Enter your line: ", instrumentObj.name, lines[num]) as text|null)
 		if(!content || !usr.canUseTopic(instrumentObj, BE_CLOSE, FALSE, NO_TK))
 			return
-		if(lentext(content) > MUSIC_MAXLINECHARS)
+		if(length(content) > MUSIC_MAXLINECHARS)
 			content = copytext(content, 1, MUSIC_MAXLINECHARS)
 		if(num > lines.len || num < 1)
 			return
