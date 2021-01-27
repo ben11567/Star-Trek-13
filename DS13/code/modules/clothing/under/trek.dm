@@ -19,6 +19,51 @@
 	item_color = "trek_medsci_ds9"
 	item_state = "bl_suit"
 
+/obj/item/clothing/under/trek/ensign/tng // Shut up Wesley
+	name = "starfleet ensign uniform"
+	desc = "A generalist uniform for crewmembers lowest on the chain of command, its bright ring colors allocate them to assist all departments."
+	icon = 'DS13/icons/obj/clothing/uniforms.dmi' //Modularity, nich would be proud
+	alternate_worn_icon = 'DS13/icons/mob/uniform.dmi'
+	icon_state = "trek_ensign_tng"
+	item_color = "trek_ensign_tng"
+	item_state = "b_suit"
+
+/obj/item/clothing/under/trek/ensign/tng/full // Shut up Wesley
+	name = "starfleet full-ensign uniform"
+	desc = "A promoted rank created entirely by Captain Jean-Luc Picard, its grey neutral color assigning them to all onboard departments. The ranked position has only ever been held by ensign Wesley Crusher to-date."
+	icon = 'DS13/icons/obj/clothing/uniforms.dmi' //Modularity, nich would be proud
+	alternate_worn_icon = 'DS13/icons/mob/uniform.dmi'
+	icon_state = "trek_ensign_full_tng"
+	item_color = "trek_ensign_full_tng"
+	item_state = "gy_suit"
+
+/obj/item/clothing/under/trek/command/tng/skant //when a real tng uniform is used, reallocate the icons for these scants.
+	name = "starfleet command skant uniform"
+	desc = "A unisex miniskirt uniform meant to try to equalize both male & female crewmembers with mixed success."
+	icon = 'DS13/icons/obj/clothing/uniforms.dmi' //Modularity, nich would be proud
+	alternate_worn_icon = 'DS13/icons/mob/uniform.dmi'
+	icon_state = "trek_command_skant_tng"
+	item_color = "trek_command_skant_tng"
+	item_state = "bl_suit"
+
+/obj/item/clothing/under/trek/engsec/tng/skant
+	name = "starfleet engsec skant uniform"
+	desc = "A unisex miniskirt uniform meant to try to equalize both male & female crewmembers with mixed success."
+	icon = 'DS13/icons/obj/clothing/uniforms.dmi' //Modularity, nich would be proud
+	alternate_worn_icon = 'DS13/icons/mob/uniform.dmi'
+	icon_state = "trek_engsec_skant_tng"
+	item_color = "trek_engsec_skant_tng"
+	item_state = "bl_suit"
+
+	/obj/item/clothing/under/trek/medsci/tng/skant
+	name = "starfleet medsci skant uniform"
+	desc = "A unisex miniskirt uniform meant to try to equalize both male & female crewmembers with mixed success."
+	icon = 'DS13/icons/obj/clothing/uniforms.dmi' //Modularity, nich would be proud
+	alternate_worn_icon = 'DS13/icons/mob/uniform.dmi'
+	icon_state = "trek_medsci_skant_tng"
+	item_color = "trek_medsci_skant_tng"
+	item_state = "bl_suit"
+
 /obj/item/clothing/accessory/ds9_jacket
 	name = "uniform jacket"
 	desc = "An extremely comfortable jacket with some storage pockets for tools."
