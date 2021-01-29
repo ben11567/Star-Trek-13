@@ -5,6 +5,7 @@
 	uniform =  /obj/item/clothing/under/abductor
 	suit = /obj/item/clothing/suit/space/borg
 	shoes = /obj/item/clothing/shoes/jackboots
+	gloves = /obj/item/clothing/gloves/combat
 	head = /obj/item/clothing/head/helmet/space/borg
 	l_hand = /obj/item/borg_tool
 	mask = /obj/item/clothing/mask/gas/borg
