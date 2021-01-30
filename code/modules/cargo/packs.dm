@@ -269,6 +269,14 @@
 					/obj/item/gun/energy/disabler)
 	crate_name = "disabler crate"
 
+	/datum/supply_pack/security/phaser
+	name = "Phaser Crate"
+	desc = "Two phasers, with stun and kill modes. Requires Security access to open."
+	cost = 3000
+	contains = list(/obj/item/gun/energy/phaser,
+					/obj/item/gun/energy/phaser)
+	crate_name = "phaser crate"
+
 /datum/supply_pack/security/forensics
 	name = "Forensics Crate"
 	desc = "Stay hot on the criminal's heels with Nanotrasen's Detective Essentials(tm). Contains a forensics scanner, six evidence bags, camera, tape recorder, white crayon, and of course, a fedora. Requires Security access to open."
@@ -429,6 +437,13 @@
 					/obj/item/gun/energy/e_gun)
 	crate_name = "energy gun crate"
 	crate_type = /obj/structure/closet/crate/secure/plasma
+
+/datum/supply_pack/security/armory/phaser
+	name = "Heavy Phaser Crate"
+	desc = "One Heavy Phaser Rifle, with stun, kill, and wide beam modes. Requires Security access to open."
+	cost = 4000
+	contains = list(/obj/item/gun/energy/phaser/rifle)
+	crate_name = "heavy phaser crate"
 
 /datum/supply_pack/security/armory/chemimp
 	name = "Chemical Implants Crate"
