@@ -160,6 +160,14 @@
 		cell.charge = stored_power //They cancelled reload. Give them firing perms back
 		update_icon()
 
+/datum/supply_pack/security/phaser
+	name = "Phaser Crate"
+	desc = "Two phasers, with stun and kill modes. Requires Security access to open."
+	cost = 3000
+	contains = list(/obj/item/gun/energy/phaser,
+					/obj/item/gun/energy/phaser)
+	crate_name = "phaser crate"
+
 /obj/item/gun/energy/phaser/rifle
 	name = "Heavy phaser rifle"
 	desc = "For suppressing large crowds or engaging the borg. This weapon requires you to use both hands."
@@ -171,6 +179,14 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/electrode/phaserstun, /obj/item/ammo_casing/energy/laser/phaser_rifle,/obj/item/ammo_casing/energy/laser/widebeam)
 	lefthand_file = 'DS13/icons/mob/inhands/weapons/guns_lefthand.dmi'
 	righthand_file = 'DS13/icons/mob/inhands/weapons/guns_righthand.dmi'
+
+
+/datum/supply_pack/security/armory/phaser
+	name = "Heavy Phaser Crate"
+	desc = "One Heavy Phaser Rifle, with stun, kill, and wide beam modes. Requires Security access to open."
+	cost = 4000
+	contains = list(/obj/item/gun/energy/phaser/rifle)
+	crate_name = "heavy phaser crate"
 
 /obj/item/kitchen/knife/combat/klingon
 	name = "Kut'luch"
