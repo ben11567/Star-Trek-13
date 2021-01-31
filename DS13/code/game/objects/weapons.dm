@@ -91,8 +91,6 @@
 	crate_name = "phaser cell crate"
 	crate_type = /obj/structure/closet/crate
 
-
-
 /datum/design/phaserpack //See all_nodes.dm
 	name = "Basic phaser cell"
 	desc = "A plasma fuel cell that allows you to quickly recharge a phaser."
