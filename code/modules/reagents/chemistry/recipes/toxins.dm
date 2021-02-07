@@ -101,12 +101,14 @@
 	required_reagents = list("mindbreaker" = 1, "teslium" = 1, "fentanyl" = 1)
 	mix_message = "<span class='danger'>After sparks, fire, and the smell of mindbreaker, the mix is constantly spinning with no stop in sight.</span>"
 
+/*  Skewuim is Op, and also could cause seizures, so I am disablying it by making all skewuim related code into comments, if you want to re-put it in, just ctrl-f skewium and un-comment it.
 /datum/chemical_reaction/skewium
 	name = "Skewium"
 	id = "Skewium"
 	results = list("skewium" = 5)
 	required_reagents = list("rotatium" = 2, "plasma" = 2, "sacid" = 1)
 	mix_message = "<span class='danger'>Wow! it turns out if you mix rotatium with some plasma and sulphuric acid, it gets even worse!</span>"
+*/
 
 /datum/chemical_reaction/anacea
 	name = "Anacea"
