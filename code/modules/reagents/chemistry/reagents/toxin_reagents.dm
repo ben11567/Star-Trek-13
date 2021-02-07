@@ -766,6 +766,7 @@
 			animate(whole_screen, transform = matrix(), time = 5, easing = QUAD_EASING)
 	..()
 
+/* Skewuim is Op, and also could cause seizures, so I am disablying it by making all skewuim related code into comments, if you want to re-put it in, just ctrl-f skewium and un-comment it.
 /datum/reagent/toxin/skewium
 	name = "Skewium"
 	id = "skewium"
@@ -801,6 +802,7 @@
 		for(var/whole_screen in screens)
 			animate(whole_screen, transform = matrix(), time = 5, easing = QUAD_EASING)
 	..()
+*/
 
 
 /datum/reagent/toxin/anacea
