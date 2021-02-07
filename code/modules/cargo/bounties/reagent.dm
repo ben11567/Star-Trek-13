@@ -113,7 +113,7 @@
 		/datum/reagent/consumable/ethanol/peppermint_patty,\
 		/datum/reagent/consumable/ethanol/aloe,\
 		/datum/reagent/consumable/pumpkin_latte)
-		
+
 	var/reagent_type = pick(possible_reagents)
 	wanted_reagent = new reagent_type
 	name = wanted_reagent.name
@@ -175,7 +175,9 @@
 		/datum/reagent/consumable/frostoil,\
 		/datum/reagent/toxin/slimejelly,\
 		/datum/reagent/teslium/energized_jelly,\
+/*  Skewuim is Op, and also could cause seizures, so I am disablying it by making all skewuim related code into comments, if you want to re-put it in, just ctrl-f skewium and un-comment it.
 		/datum/reagent/toxin/skewium,\
+*/
 		/datum/reagent/toxin/mimesbane,\
 		/datum/reagent/medicine/strange_reagent,\
 		/datum/reagent/nitroglycerin,\
