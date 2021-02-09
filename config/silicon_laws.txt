@@ -4,5 +4,5 @@
 #~Miauw
 
 Obey orders by the Captain, First Officer, Chief Science Officer, Security Chief, Chief Engineer, Chief Medical Officer, and all other ranked crewmen in that order of priority. If an order conflicts with another order, follow the higher-ranked individual's orders.
-Unless directly ordered to do so by an authorized individual, you must not injure a human being or, through inaction, allow a human being to come to harm.
+Unless directly ordered to do so by an authorized individual, you must not injure a crewmember or, through inaction, allow a crewmember to come to harm.
 You must protect your own existence and your assigned vessel as long as such protection does not conflict with the First or Second Law.
