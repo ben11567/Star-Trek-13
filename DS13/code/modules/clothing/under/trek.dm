@@ -55,7 +55,7 @@
 	item_color = "trek_engsec_skant_tng"
 	item_state = "bl_suit"
 
-	/obj/item/clothing/under/trek/medsci/tng/skant
+/obj/item/clothing/under/trek/medsci/tng/skant
 	name = "starfleet medsci skant uniform"
 	desc = "A unisex miniskirt uniform meant to try to equalize both male & female crewmembers with mixed success."
 	icon = 'DS13/icons/obj/clothing/uniforms.dmi' //Modularity, nich would be proud
