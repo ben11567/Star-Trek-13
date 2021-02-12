@@ -24,6 +24,8 @@
 					/obj/item/clothing/under/rank/security/skirt = 3,
 					/obj/item/clothing/under/rank/security/grey = 3,
 					/obj/item/clothing/under/pants/khaki = 3,
+					/obj/item/clothing/under/trek/engsec/ds9 = 3,
+					/obj/item/clothing/accessory/ds9_jacket/engsec = 3,
 					/obj/item/clothing/under/rank/security/blueshirt = 3)
 	premium = list(/obj/item/clothing/under/rank/security/navyblue = 3,
 					/obj/item/clothing/suit/security/officer = 3,
@@ -56,6 +58,8 @@
 					/obj/item/clothing/shoes/sneakers/white = 4,
 					/obj/item/clothing/head/soft/emt = 4,
 					/obj/item/clothing/suit/apron/surgical = 4,
+					/obj/item/clothing/under/trek/medsci/ds9 = 4,
+					/obj/item/clothing/accessory/ds9_jacket/medsci = 3,
 					/obj/item/clothing/mask/surgical = 4)
 	refill_canister = /obj/item/vending_refill/wardrobe/medi_wardrobe
 	payment_department = ACCOUNT_MED
@@ -77,6 +81,8 @@
 					/obj/item/clothing/under/rank/engineer/hazard = 3,
 					/obj/item/clothing/suit/hazardvest = 3,
 					/obj/item/clothing/shoes/workboots = 3,
+					/obj/item/clothing/under/trek/engsec/ds9 = 3,
+					/obj/item/clothing/accessory/ds9_jacket/engsec = 3,
 					/obj/item/clothing/head/hardhat = 3)
 	refill_canister = /obj/item/vending_refill/wardrobe/engi_wardrobe
 	payment_department = ACCOUNT_ENG
@@ -112,6 +118,7 @@
 					/obj/item/clothing/shoes/sneakers/black = 3,
 					/obj/item/clothing/gloves/fingerless = 3,
 					/obj/item/clothing/head/soft = 3,
+					/obj/item/clothing/under/trek/shuttle = 3,
 					/obj/item/radio/headset/headset_cargo = 3)
 	premium = list(/obj/item/clothing/under/rank/miner = 3)
 	refill_canister = /obj/item/vending_refill/wardrobe/cargo_wardrobe
@@ -151,6 +158,8 @@
 					/obj/item/clothing/suit/toggle/labcoat/science = 3,
 					/obj/item/clothing/shoes/sneakers/white = 3,
 					/obj/item/radio/headset/headset_sci = 3,
+					/obj/item/clothing/under/trek/medsci/ds9 = 3,
+					/obj/item/clothing/accessory/ds9_jacket/medsci = 2,
 					/obj/item/clothing/mask/gas = 3)
 	refill_canister = /obj/item/vending_refill/wardrobe/science_wardrobe
 	payment_department = ACCOUNT_SCI
