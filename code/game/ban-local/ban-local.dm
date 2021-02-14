@@ -36,26 +36,6 @@ mob
 							fdel("code/game/ban-local/ipban/[M]") 
 							fdel("code/game/ban-local/keyban/[M]") 
 
-/*			IPBan()		//Just use key and IP ban
-				set category="Host"//could change to Admin
-				var/list/mmlist[0]
-				var/mob/mm
-				for(mm)
-					if(mm.key)
-						mmlist.Add(mm.key)
-				var/mob/M = input("Choose a player to IP ban") in mmlist + list(" ","Cancel")
-				if(M==null || M==/list || M=="Cancel" || M==" ")
-					return
-				else
-					switch(alert("Are you sure you want to IP ban [M].","IP Ban","Ban","Nevermind"))
-						if("Ban")					
-							log_admin("[key_name(usr)] has banned [M]")
-							message_admins("[key_name(usr)] has banned [M]")
-							fcopy("[M.ip]","code/game/ban-local/ipban/[M.ip]") 
-							del(M) 
-						else
-							return
-*/
 
 			KeyBan()
 				set category="Host"//could change to Admin
