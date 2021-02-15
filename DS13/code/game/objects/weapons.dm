@@ -47,7 +47,6 @@
 	icon_state = "solar"
 
 /obj/item/ammo_casing/energy/disabler/phaserstun
-	e_cost = 60
 	fire_sound = 'DS13/sound/effects/weapons/phaser.ogg'
 	select_name = "stun"
 	projectile_type = /obj/item/projectile/beam/disabler/phaser
