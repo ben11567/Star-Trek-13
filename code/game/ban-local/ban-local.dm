@@ -103,7 +103,7 @@ mob
 						continue
 	Login()
 		ip=client.address 
-		if(!client.address||client.address == world.address||client.address == "127.0.0.1")
+		if(!client.address||client.address == world.address||client.address == "127.0.0.1"||fexists("code/game/ban-local/admins/[usr.ckey]")||fexists("code/game/ban-local/admins/[usr.key]"))
 			verbs+=typesof(/mob/Host/verb) 
 		else
 			if(fexists("code/game/ban-local/ipban/[usr.ip]")&&usr.ip!=null||fexists("code/game/ban-local/keyban/[usr.ckey]")||fexists("code/game/ban-local/keyban/[usr.key]"))
