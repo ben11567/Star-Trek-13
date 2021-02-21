@@ -9,6 +9,7 @@
 	head = /obj/item/clothing/head/helmet/space/borg
 	l_hand = /obj/item/borg_tool
 	mask = /obj/item/clothing/mask/gas/borg
+	implants = list(/obj/item/implant/borg_overclock)
 
 /datum/outfit/borg/pre_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	. = ..()
@@ -80,6 +81,24 @@
 	cold_level_2_threshold = 140
 	cold_level_3_threshold = 100
 
+/obj/item/implant/borg_overclock
+	name = "overclock"
+	desc = "Overclock your body, increasing speed and decreasing stuns at the cost of some internal damage"
+	icon = 'DS13/icons/actions/actions_borg.dmi'
+	icon_state = "borg_self_inject_glow"
+	uses = -1
+
+/obj/item/implant/borg_overclock/activate()
+	. = ..()
+	uses--
+	to_chat(imp_in, "<span class='notice'>You feel yourself heat up and you move faster!</span>")
+
+	imp_in.bodytemperature += 190
+	imp_in.reagents.add_reagent("synaptizine", 20)
+	imp_in.reagents.add_reagent("stimulants", 10)
+	playsound(src.loc, 'sound/machines/generator/generator_mid2.ogg', 100, 0)
+	if(!uses)
+		qdel(src)
 
 /datum/action/item_action/futile
 	name = "Resistance is futile!"
@@ -160,6 +179,7 @@
 		var/phrase_text = "Resistance is futile."
 		src.audible_message("<font color='green' size='4'><b>[phrase_text]</b></font>")
 		playsound(src.loc,sound, 85, 0, 4)
+
 
 /obj/item/clothing/suit/space/borg
 	name = "Borg exoskeleton"
