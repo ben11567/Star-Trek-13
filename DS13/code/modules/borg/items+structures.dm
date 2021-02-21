@@ -86,7 +86,7 @@
 	desc = "Overclock your body, increasing speed and decreasing stuns at the cost of some internal damage"
 	icon = 'DS13/icons/actions/actions_borg.dmi'
 	icon_state = "borg_self_inject_glow"
-	uses = 1000
+	uses = -1
 
 /obj/item/implant/borg_overclock/activate()
 	. = ..()
@@ -96,6 +96,7 @@
 	imp_in.bodytemperature += 190
 	imp_in.reagents.add_reagent("synaptizine", 20)
 	imp_in.reagents.add_reagent("stimulants", 10)
+	playsound(src.loc, 'sound/machines/generator/generator_mid2.ogg', 100, 0)
 	if(!uses)
 		qdel(src)
 
