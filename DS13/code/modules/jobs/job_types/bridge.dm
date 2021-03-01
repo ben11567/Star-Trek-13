@@ -11,8 +11,8 @@ Bridge crew
 	spawn_positions = 3
 	supervisors = "the first officer"
 	selection_color = "#ccccff"
-	access = list(ACCESS_HEADS, ACCESS_MAINT_TUNNELS)
-	minimal_access = list(ACCESS_HEADS, ACCESS_MAINT_TUNNELS)
+	access = list(ACCESS_HEADS, ACCESS_MAINT_TUNNELS, ACCESS_SEC_DOORS, ACCESS_ENGINE_EQUIP)
+	minimal_access = list(ACCESS_HEADS, ACCESS_MAINT_TUNNELS, ACCESS_SEC_DOORS, ACCESS_ENGINE_EQUIP)
 	outfit = /datum/outfit/job/bridge
 	paycheck = PAYCHECK_COMMAND
 	paycheck_department = ACCOUNT_SEC
