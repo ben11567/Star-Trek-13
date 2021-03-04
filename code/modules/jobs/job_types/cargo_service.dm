@@ -9,7 +9,7 @@ Quartermaster
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the head of personnel"
+	supervisors = "the first officer"
 	selection_color = "#d7b088"
 	description = "'MOVE FREIGHT!' The quartermaster is responsible for the ship's runabout and oversees salvage + mining operations. This role is great if you want to get into command gameplay as you get your own small ship to manage."
 
@@ -44,7 +44,7 @@ Cargo Technician
 	faction = "Station"
 	total_positions = 3
 	spawn_positions = 2
-	supervisors = "the quartermaster and the head of personnel"
+	supervisors = "the quartermaster and the first officer"
 	selection_color = "#dcba97"
 	description = "'Hail Cargonia!' As a cargo technician, your primary role is to order any supplies the crew needs, be it metal after a skirmish, or combat shotguns when boarded by the borg. The QM may call upon you to crew the runabout if there aren't many miners, but this isn't your primary focus. You may not be at the helm of a starship but this job is a fantastic way to gain experience before tackling more crucial roles."
 
@@ -74,14 +74,14 @@ Shaft Miner
 	faction = "Station"
 	total_positions = 3
 	spawn_positions = 3
-	supervisors = "the quartermaster and the head of personnel"
+	supervisors = "the quartermaster and the first officer"
 	selection_color = "#dcba97"
 	description = "As a miner you will either crew the cargo runabout or head off to lavaland to mine ores traditionally. If the crew calls on you for salvage operations, this will override your normal mining duties. <br><b>A miner should be physically tough and comfortable with heavy machinery</b>"
 
 	outfit = /datum/outfit/job/miner
 
 	access = list(ACCESS_MAINT_TUNNELS, ACCESS_MAILSORTING, ACCESS_CARGO, ACCESS_QM, ACCESS_MINING, ACCESS_MECH_MINING, ACCESS_MINING_STATION, ACCESS_MINERAL_STOREROOM, ACCESS_RESEARCH, ACCESS_ROBOTICS, ACCESS_XENOBIOLOGY, ACCESS_TECH_STORAGE, ACCESS_TOX_STORAGE,ACCESS_TOX, ACCESS_GENETICS, ACCESS_MORGUE, ACCESS_CLONING, ACCESS_MEDICAL)
-	minimal_access = list(ACCESS_MINING, ACCESS_MECH_MINING, ACCESS_MINING_STATION, ACCESS_MAILSORTING, ACCESS_MINERAL_STOREROOM, ACCESS_RESEARCH, ACCESS_ROBOTICS, ACCESS_XENOBIOLOGY, ACCESS_TECH_STORAGE, ACCESS_TOX_STORAGE, ACCESS_TOX, ACCESS_GENETICS, ACCESS_MORGUE, ACCESS_CLONING, ACCESS_MEDICAL)
+	minimal_access = list(ACCESS_MINING, ACCESS_MECH_MINING, ACCESS_MINING_STATION, ACCESS_MAILSORTING, ACCESS_MINERAL_STOREROOM, ACCESS_RESEARCH, ACCESS_ROBOTICS, ACCESS_XENOBIOLOGY, ACCESS_TECH_STORAGE, ACCESS_TOX_STORAGE, ACCESS_TOX)
 	paycheck = PAYCHECK_HARD
 	paycheck_department = ACCOUNT_CAR
 
@@ -148,7 +148,7 @@ Bartender
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "the head of personnel"
+	supervisors = "the first officer"
 	selection_color = "#bbe291"
 
 	outfit = /datum/outfit/job/bartender
@@ -181,7 +181,7 @@ Cook
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 1
-	supervisors = "the head of personnel"
+	supervisors = "the first officer"
 	selection_color = "#bbe291"
 	var/cooks = 0 //Counts cooks amount
 
@@ -236,7 +236,7 @@ Botanist
 	faction = "Station"
 	total_positions = 3
 	spawn_positions = 2
-	supervisors = "the head of personnel"
+	supervisors = "the first officer"
 	selection_color = "#bbe291"
 
 	outfit = /datum/outfit/job/botanist
@@ -275,7 +275,7 @@ Janitor
 	faction = "Station"
 	total_positions = 2
 	spawn_positions = 1
-	supervisors = "the head of personnel"
+	supervisors = "the first officer"
 	selection_color = "#bbe291"
 	var/global/janitors = 0
 
