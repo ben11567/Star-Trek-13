@@ -4,7 +4,7 @@
 	hitsound = 'DS13/sound/effects/weapons/phaser_hit.ogg'
 	impact_effect_type = /obj/effect/temp_visual/impact_effect/phaser
 
-/obj/item/projectile/energy/electrode/phaser
+/obj/item/projectile/beam/disabler/phaser
 	hitscan = TRUE //beams
 	light_color = LIGHT_COLOR_ORANGE
 	icon_state = "laser"
@@ -46,11 +46,10 @@
 	name = "phaser beam"
 	icon_state = "solar"
 
-/obj/item/ammo_casing/energy/electrode/phaserstun
-	e_cost = 160
+/obj/item/ammo_casing/energy/disabler/phaserstun
 	fire_sound = 'DS13/sound/effects/weapons/phaser.ogg'
 	select_name = "stun"
-	projectile_type = /obj/item/projectile/energy/electrode/phaser
+	projectile_type = /obj/item/projectile/beam/disabler/phaser
 
 /obj/item/ammo_casing/energy/laser/phaserkill
 	select_name = "kill"
@@ -91,6 +90,8 @@
 	crate_name = "phaser cell crate"
 	crate_type = /obj/structure/closet/crate
 
+
+
 /datum/design/phaserpack //See all_nodes.dm
 	name = "Basic phaser cell"
 	desc = "A plasma fuel cell that allows you to quickly recharge a phaser."
@@ -130,7 +131,7 @@
 	icon_state = "phaser"
 	ammo_x_offset = 2
 	selfcharge = FALSE //Angry reacts only boys.
-	ammo_type = list(/obj/item/ammo_casing/energy/electrode/phaserstun, /obj/item/ammo_casing/energy/laser/phaserkill)
+	ammo_type = list(/obj/item/ammo_casing/energy/disabler/phaserstun, /obj/item/ammo_casing/energy/laser/phaserkill)
 
 /obj/item/gun/energy/phaser/attack_self(mob/user)
 	. = ..()
@@ -176,7 +177,7 @@
 	icon_state = "phaserrifle"
 	weapon_weight = WEAPON_HEAVY
 	item_state = "phaserrifle"
-	ammo_type = list(/obj/item/ammo_casing/energy/electrode/phaserstun, /obj/item/ammo_casing/energy/laser/phaser_rifle,/obj/item/ammo_casing/energy/laser/widebeam)
+	ammo_type = list(/obj/item/ammo_casing/energy/disabler/phaserstun, /obj/item/ammo_casing/energy/laser/phaser_rifle,/obj/item/ammo_casing/energy/laser/widebeam)
 	lefthand_file = 'DS13/icons/mob/inhands/weapons/guns_lefthand.dmi'
 	righthand_file = 'DS13/icons/mob/inhands/weapons/guns_righthand.dmi'
 
