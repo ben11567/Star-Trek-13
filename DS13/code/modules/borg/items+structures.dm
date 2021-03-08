@@ -7,7 +7,6 @@
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/combat
 	head = /obj/item/clothing/head/helmet/space/borg
-	l_hand = /obj/item/borg_tool
 	mask = /obj/item/clothing/mask/gas/borg
 	implants = list(/obj/item/implant/borg_overclock)
 
@@ -62,11 +61,14 @@
 		return
 	if(locate(/obj/item/organ/cyberimp/chest/nutriment/plus) in H.internal_organs)
 		return
+	if(locate(/obj/item/organ/cyberimp/arm/borg_combat) in H.internal_organs)
+		return
 	var/obj/item/organ/cyberimp/arm/toolset/stored = new(get_turf(H))
 	stored.Insert(H)
 	var/obj/item/organ/cyberimp/chest/nutriment/plus/feedmeseymour = new(get_turf(H))
 	feedmeseymour.Insert(H)
-
+	var/obj/item/organ/cyberimp/arm/borg_combat/allthebettertokillyouwith = new(get_turf(H))
+	allthebettertokillyouwith.Insert(H)
 
 /obj/item/organ/lungs/cybernetic/borg
 	name = "borg cybernetic lungs"
@@ -622,3 +624,28 @@
 			apart by [user]!</span>")
 		qdel(A)
 	busy = FALSE
+
+// borg phazer
+
+/obj/item/gun/energy/phaser/borg
+	name = "borg phaser"
+	desc = "A wicked ranged weapon built into borg units, it has <b>stun</b> and <b>kill</b> modes ."
+	icon = 'DS13/icons/weapons/energy.dmi'
+	icon_state = "borg_phaser"
+	item_flags = SLOWS_WHILE_IN_HAND
+	slowdown = 2
+	clumsy_check = 0
+	trigger_guard = TRIGGER_GUARD_ALLOW_ALL
+	ammo_x_offset = 2
+	selfcharge = 1 //I could do something cool with the borg recharger, but I don't know code well.
+	ammo_type = list(/obj/item/ammo_casing/energy/disabler/phaserstun, /obj/item/ammo_casing/energy/laser/phaserkill)
+
+/obj/item/organ/cyberimp/arm/borg_combat
+	name = "Borg Weapon Implant"
+	desc = "Deploy Your ARMement"
+	icon = 'DS13/icons/borg/borg.dmi'
+	icon_state = "borg_weapons"
+	contents = newlist(/obj/item/gun/energy/phaser/borg,/obj/item/borg_tool)
+
+/obj/item/organ/cyberimp/arm/borg_combat
+	zone = BODY_ZONE_L_ARM
