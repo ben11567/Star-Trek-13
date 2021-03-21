@@ -1,4 +1,4 @@
-## /tg/station codebase
+## Star Trek-13 codebase, a Modification of Tg/Station
 
 [![Build Status](https://travis-ci.org/DDMers/Deep-Space-13.png)](https://travis-ci.org/DDMers/Deep-Space-13) [![Krihelimeter](https://www.krihelinator.xyz/badge/DDMers/Deep-Space-13)](https://www.krihelinator.xyz)  
 [![Percentage of issues still open](https://isitmaintained.com/badge/open/DDMers/Deep-Space-13.svg)](https://isitmaintained.com/project/DDMers/Deep-Space-13 "Percentage of issues still open") [![Average time to resolve an issue](https://isitmaintained.com/badge/resolution/DDMers/Deep-Space-13.svg)](https://isitmaintained.com/project/DDMers/Deep-Space-13 "Average time to resolve an issue") ![Coverage](https://img.shields.io/badge/coverage---2%25-red.svg)  
@@ -9,7 +9,39 @@
 **Wiki** https://st.ddmers.com/wiki/Main_Page
 **IRC:** if you dont have an IRC client, welcome to the modern day.
 
- 
+## In recollection of the brave ensigns and staff aboard Star Trek 13
+
+ Star Trek 13 was origionally produced by KMC during highschool. Quite literally a small project on the sidelines, and while it does not always succeed when hosted by different sources and modified, or changed, and while the gameplay loop is sometimes dull or bland.  I do not entirely believe it is possible for a codebase to die, there will always be someone looking back at us and at Star Trek 13, and the other communities within Space Station 13 and with a spark of curiousity. 
+I will add, that these names will have very little meaning to you, that is alright. They're meant for the curious.
+
+ Perhaps, until next time..
+"It is possible to commit no mistakes and still lose. That is not weakness, that is life."
+
+------
+My Captain Sir!
+------
+Captain Nick O' Connor
+
+Captain Warner Vasilyev
+
+Captain Holly Sutton
+
+Captain Ash Powell
+
+
+-----
+In Good Memory
+-----
+**Admiral?** Lance Endsley-i'm kidding, god damn you endsley.
+
+Ensign Tater Potatio
+
+Ensign Matthew Hopper
+
+and a thank you, to all the other ensigns aboard Star Trek 13. None of it would have been possible without all of you.
+
+Live Long and Prosper!
+
 ## DOWNLOADING
 
 There are a number of ways to download the source code. Some are described here, an alternative all-inclusive guide is also located at https://www.tgstation13.org/wiki/Downloading_the_source_code
